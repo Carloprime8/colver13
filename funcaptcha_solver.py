@@ -6,7 +6,7 @@ class funcaptcha:
     def __init__(self, public_key, site):
         self.session = requests.Session()
         self.user_agent = "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36"
-        self.url = "https://roblox-api.arkoselabs.com/"
+        self.url = "https://api.funcaptcha.com"
         self.public_key = public_key
         self.site = site
         self.start_time = time.time()
@@ -45,7 +45,7 @@ class funcaptcha:
     def get_game_token(self, session_token):
         data = {
             "lang": "",
-            "sid": "us-east-1",
+            "sid": "eu-west-1",
             "analytics_tier": "40",
             "render_type": "canvas",
             "token": session_token,
@@ -61,7 +61,7 @@ class funcaptcha:
     
     def load_game(self, session_token, game_token):
         data = {
-            "sid": "us-east-1",
+            "sid": "eu-west-1",
             "session_token": session_token,
             "render_type": "canvas",
             "game_type": "3",
@@ -78,7 +78,7 @@ class funcaptcha:
     
     def switch_to_audio(self, session_token, game_token):
         data = {
-            "sid": "us-east-1",
+            "sid": "eu-west-1",
             "session_token": session_token,
             "render_type": "canvas",
             "label": "swapped to audio captcha",
@@ -98,7 +98,7 @@ class funcaptcha:
         data = {
             "session_token": session_token,
             "analytics_tier": "40",
-            "r": "us-east-1",
+            "r": "eu-west-1",
             "game": "0",
             "language": "en"
         }
@@ -234,7 +234,7 @@ class funcaptcha:
             "analytics_tier": "40",
             "response": response,
             "language": "en",
-            "r": "us-east-1",
+            "r": "eu-west-1",
             "audio_type": "2",
             "bio": ""
         }
