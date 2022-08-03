@@ -6,7 +6,7 @@ class funcaptcha:
     def __init__(self, public_key, site):
         self.session = requests.Session()
         self.user_agent = "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36"
-        self.url = "https://api.funcaptcha.com"
+        self.url = "https://roblox-api.arkoselabs.com/"
         self.public_key = public_key
         self.site = site
         self.start_time = time.time()
