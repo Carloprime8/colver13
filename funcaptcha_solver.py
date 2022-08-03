@@ -45,7 +45,7 @@ class funcaptcha:
     def get_game_token(self, session_token):
         data = {
             "lang": "",
-            "sid": "eu-west-1",
+            "sid": "us-east-1",
             "analytics_tier": "40",
             "render_type": "canvas",
             "token": session_token,
@@ -61,7 +61,7 @@ class funcaptcha:
     
     def load_game(self, session_token, game_token):
         data = {
-            "sid": "eu-west-1",
+            "sid": "us-east-1",
             "session_token": session_token,
             "render_type": "canvas",
             "game_type": "3",
@@ -78,7 +78,7 @@ class funcaptcha:
     
     def switch_to_audio(self, session_token, game_token):
         data = {
-            "sid": "eu-west-1",
+            "sid": "us-east-1",
             "session_token": session_token,
             "render_type": "canvas",
             "label": "swapped to audio captcha",
@@ -98,7 +98,7 @@ class funcaptcha:
         data = {
             "session_token": session_token,
             "analytics_tier": "40",
-            "r": "eu-west-1",
+            "r": "us-east-1",
             "game": "0",
             "language": "en"
         }
@@ -234,7 +234,7 @@ class funcaptcha:
             "analytics_tier": "40",
             "response": response,
             "language": "en",
-            "r": "eu-west-1",
+            "r": "us-east-1",
             "audio_type": "2",
             "bio": ""
         }
